@@ -5,7 +5,6 @@ html {
 body {
     background: rgb(0, 0, 0);
     font-weight: 400;
-
 }
 
 .header {
@@ -19,6 +18,7 @@ body {
 
 .container {
     margin: 0 auto;
+    padding: 0px 15px;
     max-width: 1150px;
 }
 
@@ -32,8 +32,8 @@ body {
     text-align: center;
 }
 
-.logo-link {
-    font-size: 42.41px;
+.logo__link {
+    font-size: 42px;
     line-height: 36px;
     font-weight: 700;
     letter-spacing: -0.11em;
@@ -65,12 +65,7 @@ body {
     color: rgb(27, 255, 7);
 }
 
-.main {
-    max-width: 1400px;
-    margin: 0 auto;
-    font-family: "IBM Plex Mono", monospace;
-    letter-spacing: -0.03em;
-}
+.main {}
 
 .intoducing {}
 
@@ -90,63 +85,63 @@ body {
     color: #1bff07;
 }
 
-.latest-projects {
+.projects {
     padding-top: 150px;
     color: rgb(255, 255, 255);
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: -0.03em;
 }
 
-.latest-projects__heading {
+.projects__heading {
     margin-bottom: 40px;
     font-size: 55px;
     line-height: 72px;
 }
 
-.last-project {
-    position: relative;
-}
+.last-project {}
 
-.last-project__image {
-    border-radius: 30px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%),
-        url(image);
-}
+
 
 .last-project__link {
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
+    position: relative;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
 
 .last-project__link:hover {
     color: #1bff07;
 }
 
+
+.last-project__image {
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%);
+}
+
+.last-project__text {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+
+}
+
 .last-project__heading {
+
     font-size: 35px;
     line-height: 46px;
 }
 
 .last-project__desc {
+
     font-size: 30px;
     line-height: 39px;
 }
 
-.second-project {
-    position: relative;
-}
-
-.second-project__image {
-    border-radius: 30px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%),
-        url(image);
-}
+.second-project {}
 
 .second-project__link {
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
+    position: relative;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -154,6 +149,19 @@ body {
 .second-project__link:hover {
     color: #1bff07;
 }
+
+.second-project__image {
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%);
+}
+
+.second-project__text {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+
 
 .second-project__heading {
     font-size: 35px;
@@ -165,26 +173,29 @@ body {
     line-height: 39px;
 }
 
-.third-project {
-    position: relative;
-}
+.third-project {}
 
-.third-project__image {
-    border-radius: 30px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%),
-        url(image);
-}
+
 
 .third-project__link {
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
+    position: relative;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .third-project__link:hover {
     color: #1bff07;
+}
+
+.third-project__image {
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%);
+}
+
+.third-project__text {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
 }
 
 .third-project__heading {
@@ -197,7 +208,7 @@ body {
     line-height: 39px;
 }
 
-.latest-projects__btn {
+.projects__btn {
     display: flex;
     justify-content: center;
     margin-top: 80px;
@@ -218,15 +229,16 @@ body {
     text-decoration: none;
 }
 
-.latest-projects__btn:hover {
+.projects__btn:hover {
     background: rgb(0, 0, 0);
-    ;
     border: 1px solid rgb(27, 255, 7);
     color: rgb(27, 255, 7);
 }
 
 .skills {
     padding-top: 150px;
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: -0.03em;
 }
 
 .skills__heading {
@@ -234,6 +246,8 @@ body {
     line-height: 72px;
     color: rgb(255, 255, 255);
 }
+
+.skills__list {}
 
 .skill-first {}
 
@@ -251,7 +265,7 @@ body {
     width: 45px;
     height: 44px;
     bottom: 60px;
-    content: '';
+    content: "";
     background-image: url("../resources/html_css.png");
 }
 
@@ -278,7 +292,7 @@ body {
     width: 45px;
     height: 44px;
     bottom: 60px;
-    content: '';
+    content: "";
     background-image: url("../resources/js.png");
 }
 
@@ -305,7 +319,7 @@ body {
     width: 45px;
     height: 44px;
     bottom: 60px;
-    content: '';
+    content: "";
     background-image: url("../resources/libraries.png");
 }
 
@@ -322,6 +336,7 @@ body {
     margin-top: 104px;
     margin-bottom: 15px;
     position: relative;
+    width: 651px;
     color: rgb(27, 255, 7);
     font-size: 35px;
     line-height: 46px;
@@ -331,8 +346,8 @@ body {
     position: absolute;
     width: 45px;
     height: 44px;
-    bottom: 60px;
-    content: '';
+    bottom: 105px;
+    content: "";
     background-image: url("../resources/mobile_dev.png");
 }
 
@@ -346,6 +361,8 @@ body {
 .services {
     padding-top: 150px;
     padding-bottom: 150px;
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: -0.03em;
 }
 
 .services__heading {
@@ -355,6 +372,10 @@ body {
     font-size: 35px;
     line-height: 46px;
 }
+
+.services__list {}
+
+
 
 .website-development {
     margin-bottom: 74px;
@@ -446,30 +467,14 @@ body {
     position: relative;
     background: rgb(25, 28, 25);
     border-radius: 30px;
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: -0.03em;
 }
-
 
 .contacts__info {
     display: inline-block;
     padding-top: 320px;
     padding-bottom: 90px;
-}
-
-.contacts__info a {
-    display: block;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    line-height: 60px;
-    text-decoration: none;
-}
-
-.contacts__info a:last-child {
-    margin-bottom: 0px;
-}
-
-.contacts__info a:hover {
-    color: rgb(27, 255, 7);
 }
 
 .contacts__heading {
@@ -478,6 +483,31 @@ body {
     font-size: 35px;
     line-height: 60px;
 }
+
+.contacts__list {}
+
+.contacts__list-item {
+    margin-bottom: 20px;
+
+}
+
+.contacts__list-item a {
+
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.contacts__list-item a:last-child {
+    margin-bottom: 0px;
+}
+
+.contacts__list-item a:hover {
+    color: rgb(27, 255, 7);
+}
+
+
 
 .contacts__photo {
     position: absolute;
