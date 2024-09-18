@@ -63,6 +63,7 @@ body {
 
 .menu__item__link:hover {
     color: rgb(27, 255, 7);
+    transition: 0.5s;
 }
 
 .main {}
@@ -104,6 +105,7 @@ body {
 
 .last-project__link {
     position: relative;
+    height: 550px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -111,10 +113,14 @@ body {
 
 .last-project__link:hover {
     color: #1bff07;
+    transition: 0.5s;
 }
 
 
 .last-project__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%);
 }
@@ -142,15 +148,20 @@ body {
 
 .second-project__link {
     position: relative;
+    height: 550px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .second-project__link:hover {
     color: #1bff07;
+    transition: 0.5s;
 }
 
 .second-project__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%);
 }
@@ -179,15 +190,20 @@ body {
 
 .third-project__link {
     position: relative;
+    height: 550px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .third-project__link:hover {
     color: #1bff07;
+    transition: 0.5s;
 }
 
 .third-project__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%);
 }
@@ -220,6 +236,7 @@ body {
     font-size: 30px;
     line-height: 153px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .btn__link {
@@ -249,7 +266,9 @@ body {
 
 .skills__list {}
 
-.skill-first {}
+.skill-first {
+    width: 774px;
+}
 
 .skill-first__heading {
     margin-top: 104px;
@@ -270,13 +289,14 @@ body {
 }
 
 .skill-first__desc {
-    width: 774px;
     color: rgb(255, 255, 255);
     font-size: 22px;
     line-height: 29px;
 }
 
-.skill-second {}
+.skill-second {
+    width: 774px;
+}
 
 .skill-second__heading {
     margin-top: 104px;
@@ -297,13 +317,14 @@ body {
 }
 
 .skill-second__desc {
-    width: 774px;
     color: rgb(255, 255, 255);
     font-size: 22px;
     line-height: 29px;
 }
 
-.skill-third {}
+.skill-third {
+    width: 774px;
+}
 
 .skill-third__heading {
     margin-top: 104px;
@@ -324,13 +345,14 @@ body {
 }
 
 .skill-third__desc {
-    width: 774px;
     color: rgb(255, 255, 255);
     font-size: 22px;
     line-height: 29px;
 }
 
-.skill-fourth {}
+.skill-fourth {
+    width: 774px;
+}
 
 .skill-fourth__heading {
     margin-top: 104px;
@@ -352,7 +374,6 @@ body {
 }
 
 .skill-fourth__desc {
-    width: 774px;
     color: rgb(255, 255, 255);
     font-size: 22px;
     line-height: 29px;
@@ -377,85 +398,108 @@ body {
 
 
 
-.website-development {
+.site-dev {
     margin-bottom: 74px;
 }
 
-.website-development__image {
+.site-dev__wrap {
+    height: 200px;
+
+}
+
+.site-dev__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px;
 }
 
-.website-development__text {
-    border-radius: 30px;
+.site-dev__text {
+    padding: 40px 0px 40px 40px;
     background: rgb(25, 28, 25);
+    border-radius: 30px;
+
 }
 
-.website-development__heading {
-    padding: 40px 0px 0px 40px;
+.site-dev__heading {
     margin-bottom: 15px;
     color: rgb(27, 255, 7);
     font-size: 55px;
     line-height: 72px;
 }
 
-.website-development__desc {
-    padding: 0px 0px 40px 40px;
+.site-dev__desc {
     width: 755px;
     color: rgb(255, 255, 255);
     font-size: 22px;
     line-height: 29px;
 }
 
-.website-layout {
+.site-layout {
     margin-bottom: 137px;
 }
 
-.website-layout__image {
+.site-layout__wrap {
+    height: 200px;
+}
+
+.site-layout__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px;
 }
 
-.website-layout__text {
-    border-radius: 30px;
+.site-layout__text {
+    padding: 40px 0px 40px 40px;
     background: rgb(25, 28, 25);
+    border-radius: 30px;
+
 }
 
-.website-layout__heading {
-    padding: 40px 0px 0px 40px;
+.site-layout__heading {
     margin-bottom: 15px;
     color: rgb(27, 255, 7);
     font-size: 55px;
     line-height: 72px;
 }
 
-.website-layout__desc {
-    padding: 0px 0px 40px 40px;
+.site-layout__desc {
     width: 755px;
     color: rgb(255, 255, 255);
     font-size: 22px;
     line-height: 29px;
 }
 
-.mobile-interface-development {}
+.mob-dev {}
 
-.mobile-interface-development__image {
+.mob-dev__wrap {
+    height: 200px;
+
+}
+
+.mob-dev__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px;
 }
 
-.mobile-interface-development__text {
-    border-radius: 30px;
+.mob-dev__text {
+    padding: 40px 0px 40px 40px;
     background: rgb(25, 28, 25);
+    border-radius: 30px;
+
 }
 
-.mobile-interface-development__heading {
-    padding: 40px 0px 0px 40px;
+.mob-dev__heading {
     margin-bottom: 15px;
     color: rgb(27, 255, 7);
     font-size: 55px;
     line-height: 72px;
 }
 
-.mobile-interface-development__desc {
-    padding: 0px 0px 40px 40px;
+.mob-dev__desc {
     width: 755px;
     color: rgb(255, 255, 255);
     font-size: 22px;
@@ -488,11 +532,9 @@ body {
 
 .contacts__list-item {
     margin-bottom: 20px;
-
 }
 
 .contacts__list-item a {
-
     color: rgb(255, 255, 255);
     font-size: 60px;
     line-height: 60px;
@@ -505,6 +547,7 @@ body {
 
 .contacts__list-item a:hover {
     color: rgb(27, 255, 7);
+    transition: 0.5s;
 }
 
 
