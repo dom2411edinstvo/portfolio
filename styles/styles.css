@@ -104,6 +104,7 @@ body {
 
 
 .last-project__link {
+    display: block;
     position: relative;
     height: 550px;
     color: rgb(255, 255, 255);
@@ -147,6 +148,7 @@ body {
 .second-project {}
 
 .second-project__link {
+    display: block;
     position: relative;
     height: 550px;
     color: rgb(255, 255, 255);
@@ -189,6 +191,7 @@ body {
 
 
 .third-project__link {
+    display: block;
     position: relative;
     height: 550px;
     color: rgb(255, 255, 255);
