@@ -5,7 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Сброс стилей по умолчанию -->
   <link rel="stylesheet" href="./styles/reset.css" />
+
+  <!-- Шрифты проекта -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -14,39 +18,50 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
+
+  <!-- Основной файл стилей -->
   <link rel="stylesheet" href="./styles/styles.css" />
+
+  <!-- Фавикон -->
+  <link rel="icon" href="./resources/favicon.jpeg" type="image/jpeg" />
+
   <title>Портфолио</title>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <a href="#" class="logo__link">Orlov</a>
+      <div class="header-wrap">
+        <div class="logo">
+          <a href="#" class="logo__link">Artyom Nikiforov <span>frontend</span></a>
+        </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__item__link" href="#projects">портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item__link" href="#skills">компетенции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item__link" href="#services">услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item__link" href="#contacts">контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="nav">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__item__link" href="#projects">портфолио</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__item__link" href="#skills">компетенции</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__item__link" href="#services">услуги</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__item__link" href="#contacts">контакты</a>
-          </li>
-        </ul>
-      </nav>
       <div class="intoducing">
         <p class="intoducing__offer">
           Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
           повышают престиж компании и позволяют выделиться на фоне конкурентов
         </p>
         <h1 class="introducing__heading">
-          Привет, я Саша — фронтенд разработчик и дизайнер сайтов
+          Привет, я — Артём, фронтенд-разработчик и дизайнер сайтов
         </h1>
       </div>
     </div>
@@ -54,39 +69,52 @@
   <main class="main">
     <section class="projects">
       <div class="container">
-        <h2 class="projects__heading" id="projects">
-          Самые свежие проекты
-        </h2>
+        <h2 class="projects__heading" id="projects">Самые свежие проекты</h2>
         <ul class="projects__list">
-          <li class="last-project">
-            <a href="https://dom2411edinstvo.github.io/metrika_studio" target="_blank" class="last-project__link">
-              <img src="./resources/realhome.jpg" alt="Картинка последнего проекта" class="last-project__image" />
-              <div class="last-project__text">
-                <h3 class="last-project__heading">Realhome</h3>
-                <p class="last-project__desc">дизайн,верстка, настройка</p>
+          <li class="project project__last">
+            <a href="https://dom2411edinstvo.github.io/metrika_studio" target="_blank" class="project__link">
+              <picture>
+                <source media="(max-width: 1190px)" srcset="./resources/metrika_1199.jpeg">
+                <source media="(max-width: 767ox)" srcset="./resources/metrika_767.jpeg">
+                <img src="./resources/metrika_project.jpeg" alt="Картинка последнего проекта"
+                  class="project__image" />
+              </picture>
+              <div class="project__text">
+                <h3 class="project__heading">Метрика</h3>
+                <p class="project__desc">верстка, настройка</p>
               </div>
             </a>
           </li>
-          <li class="second-project">
-            <a href="https://dom2411edinstvo.github.io/hello_mom" target="_blank" class="second-project__link">
-              <img src="./resources/glass.jpg" alt="Картинка второго проекта" class="second-project__image" />
-              <div class="second-project__text">
-                <h3 class="second-project__heading">GLASS</h3>
-                <p class="second-project__desc">разработка интерфейса</p>
+          <li class="project project__second">
+            <a href="https://dom2411edinstvo.github.io/hello_mom" target="_blank" class="project__link">
+              <picture>
+                <source media="(max-width: 1190px)" srcset="./resources/nothing_1199.jpeg">
+                <source media="(max-width: 1190px)" srcset="./resources/nothing_767.jpeg">
+                <img src="./resources/nothing_project.jpeg" alt="Картинка второго проекта"
+                  class="project__image" />
+              </picture>
+              <div class="project__text">
+                <h3 class="project__heading">Nothing</h3>
+                <p class="project__desc">верстка, настройка</p>
               </div>
             </a>
           </li>
-          <li class="third-project">
-            <a href="" class="third-project__link">
-              <img src="./resources/fesiyen.jpg" alt="Картинка третьего проекта" class="third-project__image" />
-              <div class="third-project__text">
-                <h3 class="third-project__heading">Fesiyen</h3>
-                <p class="third-project__desc">разработка интерфейса</p>
+          <li class="project project__first">
+            <a href="" class="project__link">
+              <picture>
+                <source media="(max-width: 1199px)" srcset="./resources/toptrip_1199.jpeg">
+                <source media="(max-width: 767px)" srcset="./resources/toptrip_767">
+                <img src="./resources/toptrip_project.jpeg" alt="Картинка третьего проекта"
+                  class="project__image" />
+              </picture>
+              <div class="project__text">
+                <h3 class="project__heading project__heading_first">toptrip</h3>
+                <p class="project__desc">верстка</p>
               </div>
             </a>
           </li>
         </ul>
-        <a href="#" class="projects__btn">Смотреть все проекты</a>
+        <a href="#" class="btn projects__btn">Смотреть все проекты</a>
       </div>
     </section>
     <section class="skills">
@@ -108,8 +136,8 @@
               это язык программирования, который используется для создания
               динамического и интерактивного пользовательского интерфейса.
               Хороший фронтенд разработчик должен быть знаком с основами
-              JavaScript, включая работу с DOM-деревом, асинхронными запросами и
-              манипуляцией данными на стороне клиента.
+              JavaScript, включая работу с DOM-деревом, асинхронными запросами
+              и манипуляцией данными на стороне клиента.
             </p>
           </li>
           <li class="skill-third">
@@ -119,9 +147,9 @@
             <p class="skill-third__desc">
               фронтенд разработчики должны быть знакомы с различными
               библиотеками и фреймворками, такими как React, Angular, Vue и
-              другими. Умение использовать готовые решения, адаптировать их под
-              нужды проекта и расширять их функциональность, является очень
-              важным навыком.
+              другими. Умение использовать готовые решения, адаптировать их
+              под нужды проекта и расширять их функциональность, является
+              очень важным навыком.
             </p>
           </li>
           <li class="skill-fourth">
@@ -131,8 +159,8 @@
             <p class="skill-fourth__desc">
               фронтенд разработчики должны быть знакомы с различными
               библиотеками и фреймворками, такими как React, Angular, Vue и
-              другими. Умение использовать готовые решения, адаптировать их под
-              нужды проекта и расширять их функциональность является очень
+              другими. Умение использовать готовые решения, адаптировать их
+              под нужды проекта и расширять их функциональность является очень
               важным навыком.
             </p>
           </li>
@@ -151,14 +179,12 @@
             </div>
 
             <div class="site-dev__text">
-              <h3 class="site-dev__heading">
-                Разработка сайта под ключ
-              </h3>
+              <h3 class="site-dev__heading">Разработка сайта под ключ</h3>
               <p class="site-dev__desc">
                 Это создание дизайна веб-сайтов, созданный для удобства
                 пользователя и решения бизнес-задач.<br />
-                Сайты должны быть понятными и удобными, ведь чем понятнее сайт,
-                тем быстрее пользователь совершит целевое действие.
+                Сайты должны быть понятными и удобными, ведь чем понятнее
+                сайт, тем быстрее пользователь совершит целевое действие.
               </p>
             </div>
           </li>
@@ -201,14 +227,20 @@
           <adress>
             <h2 class="contacts__heading">для связи:</h2>
             <ul class="contacts__list">
-              <li class="contacts__list-item"><a href="https://vk.com/samadhi2411" target="_blank">вконтакте</a></li>
-              <li class="contacts__list-item"><a href="https://t.me/samadhi2411" target="_blank">telegram</a></li>
-              <li class="contacts__list-item"><a href="mailto:samadhi2411@ya.ru" target="_blank">mail</a></li>
+              <li class="contacts__list-item">
+                <a href="https://vk.com/samadhi2411" target="_blank">вконтакте</a>
+              </li>
+              <li class="contacts__list-item">
+                <a href="https://t.me/samadhi2411" target="_blank">telegram</a>
+              </li>
+              <li class="contacts__list-item">
+                <a href="mailto:samadhi2411@ya.ru" target="_blank">mail</a>
+              </li>
             </ul>
           </adress>
         </div>
         <div class="contacts__photo">
-          <img src="./resources/cuate.png" alt="Фото веб-разработчика" />
+          <img src="./resources/cuate.png" alt="Фотография веб-разработчика" />
         </div>
       </div>
     </section>
