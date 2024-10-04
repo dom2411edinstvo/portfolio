@@ -294,22 +294,24 @@
               </h2>
               <div class="contact__inputs-wrap">
                 <input
-                  id="name"
                   type="text"
+                  onkeypress="noDigits(event)"
                   name="name"
                   required
                   minlength="3"
                   maxlength="30"
                   class="contact__form__input"
+                  id="#name"
                   placeholder="Имя Фамилия"
                 />
                 <input
-                  id="phone"
                   type="number"
-                  name="tel"
+                  inputmode="numeric"
+                  name="phone"
                   required
-                  minlength="7"
+                  maxlength="13"
                   class="contact__form__input"
+                  id="#phone"
                   placeholder="Номер телефона"
                 />
               </div>
@@ -332,11 +334,28 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <h4 class="footer__heading">
-          Портфолио фронтенд-разработчика Саши Орлова
-        </h4>
-        <p class="footer__copyright">Все права защищены. 2023</p>
+        <div class="footer__wrap">
+          <address>
+
+          <div class="footer__persona">
+              <h4 class="footer__heading">
+                Портфолио фронтенд-разработчика Артёма Никифорова
+              </h4>
+              <ul class="footer__persona__links">
+                <li class="footer__persona__link"><a href="mailto:samadhi2411@ya.ru" target="_blank" class="mail">mail</a></li>
+                <li class="footer__persona__link"><a href="https://t.me/samadhi2411" target="_blank" class="telegram">telegram</a></li>
+                <li class="footer__persona__link"><a href="https://wa.me/79177385650" target="_blank" class="whatsapp">whatsapp</a></li>
+              </ul>
+          </div>
+        </address>
+
+          <div class="footer__copyright">
+          <p class="footer__copyright__text">©️ Все права защищены. 2024</p>
+          <p class="footer__copyright__policy">Политика обработки данных</p>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
