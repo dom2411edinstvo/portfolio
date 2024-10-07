@@ -14,3 +14,4 @@ inp.addEventListener('keypress', e => {
   if(!/\d/.test(e.key))
     e.preventDefault();
 });
+ 
