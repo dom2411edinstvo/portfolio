@@ -10,7 +10,6 @@ body {
 }
 
 section {
-  padding: 150px 0;
 }
 
 .container {
@@ -79,6 +78,8 @@ section {
 }
 
 .projects {
+  padding-top: 150px;
+
   color: rgb(255, 255, 255);
 }
 
@@ -90,12 +91,10 @@ section {
 
 .projects__list {
   margin-bottom: 80px;
-  
 }
 
 .project {
   position: relative;
-
 }
 
 .project__link {
@@ -110,7 +109,7 @@ section {
 
 .project__link:hover {
   color: #1bff07;
-} 
+}
 
 .project__image {
   width: 100%;
@@ -185,6 +184,10 @@ section {
   text-decoration: none;
 }
 
+.skills {
+  padding-top: 150px;
+}
+
 .skills__heading {
   margin-bottom: 139px;
   font-size: 55px;
@@ -208,7 +211,7 @@ section {
 
 .skill__heading {
   margin-bottom: 7%;
-  max-width: 100%;
+  width: 431px;
   position: relative;
   color: rgb(27, 255, 7);
   font-size: 35px;
@@ -258,19 +261,24 @@ section {
 }
 
 .skill__desc_first {
-  width: 535px;
+  max-width: 535px;
 }
 
 .skill__desc_second {
-  width: 570px;
+  max-width: 570px;
 }
 
 .skill__desc_third {
-  width: 570px;
+  max-width: 570px;
 }
 
 .skill__desc_fourth {
-  width: 546px;
+  max-width: 546px;
+}
+
+.services {
+  padding-top: 150px;
+  margin-bottom: 150px;
 }
 
 .services__heading {
@@ -321,6 +329,7 @@ section {
 .contact {
   position: relative;
   border-radius: 30px;
+  padding: 100px 0;
   background: rgb(25, 28, 25);
 }
 
@@ -381,7 +390,7 @@ input[type="number"] {
 
 .contact__form__btn {
   width: 450px;
-  padding: 20px;
+  padding: 20px 0;
   font-size: 22px;
   line-height: 29px;
 }
@@ -398,6 +407,8 @@ input[type="number"] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .footer {
@@ -418,6 +429,7 @@ input[type="number"] {
   justify-content: space-between;
   font-size: 22px;
   line-height: 30px;
+  letter-spacing: normal;
 }
 
 .footer__persona__links {
@@ -462,7 +474,7 @@ input[type="number"] {
     margin-bottom: 70px;
   }
 
-  .intoduce__offer {
+  .introduce__offer {
     margin-bottom: 80px;
     max-width: 350px;
     font-size: 16px;
@@ -507,87 +519,167 @@ input[type="number"] {
     line-height: 34px;
   }
 
- .project__desc {
+  .project__desc {
     font-size: 24px;
     line-height: 31px;
- }
+  }
 
- .btn {
+  .btn {
     border-radius: 8px;
- }
+  }
 
- .projects__btn {
+  .projects__btn {
     width: 460px;
     padding: 46px 68px;
     font-size: 24px;
     line-height: 32px;
- }
+  }
 
- .skills__heading {
-  margin-bottom: 106px;
-  font-size: 45px;
-  line-height: 58px;
- }
+  .skills__heading {
+    margin-bottom: 130px;
+    font-size: 45px;
+    line-height: 58px;
+  }
 
- .skills__list {
-  column-gap: 37px;
-  row-gap: 65px;
+  .skills__list {
+    row-gap: 140px;
+  }
+
+  .skill {
+  }
+
+  .skill__heading {
+    width: 80%;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .skill__heading_first::before {
+    width: 36px;
+    height: 36px;
+  }
+
+  .skill__heading_second::before {
+    width: 36px;
+    height: 36px;
+  }
+
+  .skill__heading_third::before {
+    bottom: 130px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .skill__heading_fourth::before {
+    bottom: 130px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .skill__desc {
+    height: 161px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .services {
+    margin-bottom: 110px;
+  }
+
+  .service__heading {
+    margin-bottom: 60px;
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .services__list {
+    row-gap: 32px;
+  }
+
+  .service__image {
+    border-radius: 24px;
+  }
+
+  .service__text {
+    height: 229px;
+    padding: 32px 0px 0px 32px;
+    border-radius: 24px;
+  }
+
+  .service__heading {
+    font-size: 45px;
+    line-height: 110%;
+  }
+
+  .service__desc {
+    max-width: 425px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .contact {
+    border-radius: 20px;
+    padding: 50px 0 86px;
+  }
+
+  .contact__form {
+    row-gap: 40px;
+  }
+
+  .contact__form__heading {
+    max-width: 373px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .contact__inputs-wrap {
+    row-gap: 17px;
+  }
+
+  .contact__form__input {
+    max-width: 383px;
+    border-radius: 68px;
+    padding: 10px 0px 10px 24px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .contact__form__btn {
+    width: 384px;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .contact__photo__image {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .footer {
+    padding: 50px 0px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .footer__wrap {
+    row-gap: 43px;
+  }
+
+  .footer__persona {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .footer__persona__links {
+    column-gap: 14px;
+  }
+
+  .footer__copyright {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
-.skill {
-  
-}
-
-
-.skill__heading {
-  font-size: 28px;
-  line-height: 36px;
-}
-
-.skill__heading_first::before {
-  width: 36px;
-  height: 36px;
-}
-
-.skill__heading_second::before {
-  width: 36px;
-  height: 36px;
-}
-
-.skill__heading_third::before {
-  width: 36px;
-  height: 36px;
-}
-
-.skill__heading_fourth::before {
-  width: 36px;
-  height: 36px;
-}
-
-.skill__desc {
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.skill__desc_first {
-  width: 433px;
-}
-
-.skill__desc_second {
-  width: 461px;
-}
-
-.skill__desc_third {
-  width: 461px;
-}
-
-.skill__desc_fourth {
-  width: 442px;
-}
-
-
-
-
-
+@media (max-width: 550px) {
+  .
 }
