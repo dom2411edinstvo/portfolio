@@ -199,19 +199,17 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 10%;
   row-gap: 100px;
 }
 
 .skill {
   display: flex;
   flex-direction: column;
-  max-width: 45%;
+  max-width: 50%;
 }
 
 .skill__heading {
-  margin-bottom: 7%;
-  width: 431px;
+  margin-bottom: 5%;
   position: relative;
   color: rgb(27, 255, 7);
   font-size: 35px;
@@ -313,7 +311,6 @@ section {
 }
 
 .service__heading {
-  max-width: 40%;
   color: rgb(27, 255, 7);
   font-size: 55px;
   line-height: 110%;
@@ -542,14 +539,10 @@ input[type="number"] {
   }
 
   .skills__list {
-    row-gap: 140px;
-  }
-
-  .skill {
+    row-gap: 120px;
   }
 
   .skill__heading {
-    width: 80%;
     font-size: 28px;
     line-height: 36px;
   }
@@ -565,7 +558,7 @@ input[type="number"] {
   }
 
   .skill__heading_third::before {
-    bottom: 130px;
+    bottom: 95px;
     width: 36px;
     height: 36px;
   }
@@ -577,6 +570,7 @@ input[type="number"] {
   }
 
   .skill__desc {
+    max-width: 97%;
     height: 161px;
     font-size: 18px;
     line-height: 23px;
@@ -645,7 +639,7 @@ input[type="number"] {
   }
 
   .contact__form__btn {
-    width: 384px;
+    max-width: 384px;
     padding: 12px 0;
     font-size: 16px;
     line-height: 21px;
@@ -681,5 +675,6 @@ input[type="number"] {
 }
 
 @media (max-width: 550px) {
-  .
+
+  
 }
