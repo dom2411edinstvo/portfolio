@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Сброс стилей по умолчанию -->
-    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
 
     <!-- Шрифты проекта -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,7 @@
     />
 
     <!-- Основной файл стилей -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <!-- Фавикон иконка -->
     <link rel="icon" href="./resources/favicon.png" type="image/jpeg" />
@@ -40,14 +40,18 @@
   </head>
 
   <body>
+    <!-- Шапка сайта(первый экран сайта) -->
     <header class="header">
       <div class="container">
         <div class="header-wrap">
+          <!-- Логотип -->
           <div class="logo">
             <a href="#" class="logo__link"
               ><img src="./resources/logo.png" alt="Логотип" class="logo-image"
             /></a>
           </div>
+
+          <!-- Панель навигации по сайту -->
           <nav class="nav">
             <ul class="menu">
               <li class="menu__item">
@@ -60,9 +64,66 @@
                 <a class="menu__item__link" href="#services">услуги</a>
               </li>
               <li class="menu__item">
-                <a class="menu__item__link" href="#contacts">контакты</a>
+                <a class="menu__item__link" href="#contact">контакты</a>
               </li>
             </ul>
+
+            <!-- Кнопка открытия бургера -->
+            <button class="js-burger-btn burger-btn"></button>
+            <!-- бургер меню секции header -->
+            <div class="js-burger burger">
+              <div class="burger__content">
+                <a href="#" class="burger__logo-link">
+                  <picture>
+                    <img
+                      src="./resources/logo.png"
+                      alt="Логотип"
+                      class="burger__logo"
+                    />
+                  </picture>
+                </a>
+                <nav class="burger__nav">
+                  <ul class="burger__menu">
+                    <li class="burger__menu-item">
+                      <a href="#projects">Портфолио</a>
+                    </li>
+                    <li class="burger__menu-item">
+                      <a href="#skills">Компетенции</a>
+                    </li>
+                    <li class="burger__menu-item">
+                      <a href="#services">Услуги</a>
+                    </li>
+                    <li class="burger__menu-item">
+                      <a href="#footer">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="js-burger__content burger__footer">
+                  <adress>
+                    <div class="burger__footer__wrap">
+                      <p class="burger__heading">для связи</p>
+                      <ul class="burger__list">
+                        <li class="burger__mail">
+                          <a href="mailto:samadhi2411@ya.ru" target="_blank"
+                            >mail</a
+                          >
+                        </li>
+                        <li class="burger__telegram">
+                          <a href="https://t.me/samadhi2411" target="_blank"
+                            >telegram</a
+                          >
+                        </li>
+                        <li class="burger__whatsapp">
+                          <a href="https://wa.me/79177385650" target="_blank"
+                            >whatsapp</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </adress>
+                </div>
+              </div>
+            </div>
           </nav>
         </div>
         <div class="intoduce">
@@ -77,6 +138,7 @@
       </div>
     </header>
     <main class="main">
+      <!-- Секция "Самые свежие проекты" -->
       <section class="projects">
         <div class="container">
           <h2 class="projects__heading" id="projects">Самые свежие проекты</h2>
@@ -167,6 +229,8 @@
           <a href="#" class="btn projects__btn">Смотреть все проекты</a>
         </div>
       </section>
+
+      <!-- Секция "Мои компетенции" -->
       <section class="skills">
         <div class="container">
           <h2 class="skills__heading" id="skills">Мои компетенции</h2>
@@ -217,6 +281,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- Секция услуг -->
       <section class="services">
         <div class="container">
           <h2 class="services__heading" id="services">
@@ -282,17 +348,19 @@
           </ul>
         </div>
       </section>
+
+      <!-- Секция для связи со мной -->
       <section class="contact" id="contact">
         <div class="container">
           <div class="contact__wrap">
             <form action="#" class="contact__form" id="contact__form">
-              <h2 class="contact__form__heading">
+              <h2 class="contact__form__heading" id="contact">
                 Для связи со мной заполните простую форму
               </h2>
               <div class="contact__inputs-wrap">
                 <input
+                  onkeyup="this.value = this.value.replace(/\d/g,'')"
                   type="text"
-                  onkeypress="noDigits(event)"
                   name="name"
                   required
                   minlength="3"
@@ -329,7 +397,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+
+    <!-- Подвал сайта -->
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__wrap">
           <address>
@@ -373,6 +443,9 @@
         </div>
       </div>
     </footer>
-    <script src="./js/scripts.js"></script>
+    <!-- Подключение скрипта для инпута с вводом телефона -->
+    <script src="./js/input_phone.js"></script>
+    <!-- Подключение скрипта для бургер меню -->
+    <script src="./js/burger.js"></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 let inp = document.getElementById('#phone');
 
-
 // Проверяем фокус
 inp.addEventListener('focus', _ => {
   // Если там ничего нет или есть, но левое
@@ -14,4 +13,3 @@ inp.addEventListener('keypress', e => {
   if(!/\d/.test(e.key))
     e.preventDefault();
 });
- 
