@@ -16,7 +16,6 @@ body {
 }
 
 .header {
-  height: 100vh;
   padding: 27px 0px 94px;
   background-image: linear-gradient(rgba(24, 9, 51, 0.5), rgba(0, 0, 0, 0.5)),
     url("../resources/my_photo.png");
@@ -671,8 +670,6 @@ input[type="number"] {
     line-height: 27px;
   }
 
-
-
   .skill__heading_first::before {
     width: 36px;
     height: 36px;
@@ -694,8 +691,6 @@ input[type="number"] {
     width: 36px;
     height: 36px;
   }
-
-  
 
   .skill__desc {
     width: 100%;
