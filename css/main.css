@@ -997,8 +997,7 @@ input[type="number"] {
 
   .contact__photo {
     width: 100%;
-    background-image: linear-gradient(rgba(24, 9, 51, 0.4), rgba(0, 0, 0, 0.4)),
-      url(../resources/new_photo.jpg);
+    background-image: url(../resources/new_photo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
