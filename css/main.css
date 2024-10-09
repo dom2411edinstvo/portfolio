@@ -1,5 +1,5 @@
-@import url("for_tablets.css");
-@import url("for_mobile_phones.css");
+@import url("tablets.css");
+@import url("phones.css");
 
 html {
   scroll-behavior: smooth;
