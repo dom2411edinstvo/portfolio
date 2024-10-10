@@ -669,23 +669,25 @@ input[type="number"] {
   }
 
   .skill__heading_first::before {
+    bottom: 41px;
     width: 36px;
     height: 36px;
   }
 
   .skill__heading_second::before {
+    bottom: 41px;
     width: 36px;
     height: 36px;
   }
 
   .skill__heading_third::before {
-    bottom: 95px;
+    bottom: 75px;
     width: 36px;
     height: 36px;
   }
 
   .skill__heading_fourth::before {
-    bottom: 97px;
+    bottom: 77px;
     width: 36px;
     height: 36px;
   }
@@ -803,6 +805,27 @@ input[type="number"] {
   }
 }
 
+@media (max-width: 887px) {
+  .skill__heading_fourth::before {
+    bottom: 100px;
+  }
+  
+}
+
+@media (max-width: 628px) {
+  .skill__heading_third::before {
+    bottom: 99px;
+  }
+  
+}
+
+@media (max-width: 599px) {
+  .skill__heading_fourth::before {
+    bottom: 125px;
+  }
+  
+}
+
 @media (max-width: 550px) {
   .container {
     max-width: 550px;
@@ -901,27 +924,13 @@ input[type="number"] {
   .skill__heading_third {
     min-width: 343px;
   }
-
-  .skill__heading_first::before {
-    width: 36px;
-    height: 36px;
-  }
-
-  .skill__heading_second::before {
-    width: 36px;
-    height: 36px;
-  }
-
+  
   .skill__heading_third::before {
-    bottom: 80px;
-    width: 36px;
-    height: 36px;
+    bottom: 45px;
   }
 
   .skill__heading_fourth::before {
-    bottom: 110px;
-    width: 36px;
-    height: 36px;
+    bottom: 72px;
   }
 
   .services {
@@ -1029,5 +1038,16 @@ input[type="number"] {
     row-gap: 12px;
     font-size: 13px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 542px) {
+  .skill__heading_third::before {
+    bottom: 71px;
+  }
+
+@media (max-width: 455px) {
+  .skill__heading_fourth::before {
+    bottom: 93px;
   }
 }
