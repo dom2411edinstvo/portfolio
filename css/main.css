@@ -1045,6 +1045,7 @@ input[type="number"] {
   .skill__heading_third::before {
     bottom: 71px;
   }
+}
 
 @media (max-width: 455px) {
   .skill__heading_fourth::before {
