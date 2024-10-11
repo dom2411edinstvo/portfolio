@@ -298,6 +298,7 @@ body {
 }
 
 .service__heading {
+  padding: 40px 0 0 40px;
   color: rgb(27, 255, 7);
   font-size: 55px;
   line-height: 110%;
@@ -305,6 +306,7 @@ body {
 
 .service__desc {
   max-width: 525px;
+  padding: 45px 45px 64px 0;
   color: rgb(255, 255, 255);
   font-size: 22px;
   line-height: 29px;
@@ -751,11 +753,13 @@ input[type="number"] {
   }
 
   .service__heading {
+    padding: 32px 0 0 32px;
     font-size: 45px;
     line-height: 110%;
   }
 
   .service__desc {
+    padding: 32px 38px 67px 0;
     max-width: 425px;
     font-size: 18px;
     line-height: 23px;
@@ -839,6 +843,20 @@ input[type="number"] {
   .project__mark {
     bottom: 1450%;
 }
+}
+
+@media (max-width: 765px) {
+  .service__heading {
+    max-width: 45%;
+    padding-left: 15px;
+  }
+
+  .service__desc {
+    padding: 32px 20px 68px 0;
+    max-width: 45%;
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -997,10 +1015,17 @@ input[type="number"] {
   }
 
   .service__heading {
+    max-width: 100%;
     margin-bottom: 15px;
+    padding-left: 20px;
     font-size: 35px;
     line-height: 110%;
     text-align: left;
+  }
+
+  .service__desc {
+    max-width: 100%;
+    padding: 0 20px 60px;
   }
 
   .contact {
