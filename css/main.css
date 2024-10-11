@@ -24,13 +24,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.logo {
-  width: 100px;
+.logo__link {
+  width: 80px;
+  height: 80px;
 }
 
-.logo-image {
+.logo__image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .header-wrap {
@@ -45,16 +47,20 @@ body {
   column-gap: 50px;
 }
 
-.menu__item__link {
+.menu__item-link {
   font-size: 18px;
   line-height: 23px;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-.menu__item__link:hover {
+.menu__item-link:hover {
   color: rgb(27, 255, 7);
   transition: 0.5s;
+}
+
+.introduce {
+  max-width: 725px;
 }
 
 .introduce__offer {
@@ -66,7 +72,6 @@ body {
 }
 
 .introduce__heading {
-  max-width: 725px;
   font-size: 60px;
   line-height: 70px;
   color: rgb(27, 255, 7);
@@ -414,6 +419,11 @@ input[type="number"] {
   letter-spacing: normal;
 }
 
+.footer__heading-first-line {
+  display: inline-flex;
+  width: 100%;
+}
+
 .footer__persona__links {
   display: flex;
   column-gap: 24px;
@@ -481,13 +491,14 @@ input[type="number"] {
   transform: translateX(0);
 }
 
-.burger__logo-link {
-  margin-left: -23px;
+.burger__logo__link {
+  margin-left: -13px;
 }
 
-.burger__logo {
-  width: 180px;
+.burger__logo__image {
+  width: 80px;
   margin-bottom: 37px;
+  object-fit: cover;
 }
 
 .burger__menu {
@@ -561,9 +572,9 @@ input[type="number"] {
     padding: 32px 0px 50px;
   }
 
-  .logo {
-    width: 120px;
-    height: fit-content;
+  .logo__link {
+    width: 60px;
+    height: 60px;
   }
 
   .header-wrap {
@@ -592,6 +603,10 @@ input[type="number"] {
     background: url("../resources/close_btn.svg") no-repeat center;
   }
 
+  .introduce {
+    max-width: 580px;
+  }
+
   .introduce__offer {
     max-width: 350px;
     font-size: 16px;
@@ -599,7 +614,6 @@ input[type="number"] {
   }
 
   .introduce__heading {
-    max-width: 580px;
     font-size: 45px;
     line-height: 45px;
   }
@@ -809,21 +823,18 @@ input[type="number"] {
   .skill__heading_fourth::before {
     bottom: 100px;
   }
-  
 }
 
 @media (max-width: 628px) {
   .skill__heading_third::before {
     bottom: 99px;
   }
-  
 }
 
 @media (max-width: 599px) {
   .skill__heading_fourth::before {
     bottom: 125px;
   }
-  
 }
 
 @media (max-width: 550px) {
@@ -838,15 +849,18 @@ input[type="number"] {
       url(../resources/my_photo_550.png) no-repeat center / cover;
   }
 
+  .introduce {
+    max-width: max-content;
+  }
+
   .intoduce__offer {
     margin-bottom: 130px;
-    max-width: 310px;
+    max-width: 300px;
     font-size: 15px;
     line-height: 20px;
   }
 
   .introduce__heading {
-    max-width: 360px;
     font-size: 40px;
     line-height: 47px;
   }
@@ -867,7 +881,6 @@ input[type="number"] {
   }
 
   .project__image {
-    min-width: 350px;
     height: 445px;
   }
 
@@ -889,8 +902,8 @@ input[type="number"] {
   }
 
   .projects__btn {
-    width: 350px;
-    padding: 28px 52px;
+    width: max-content;
+    padding: 20px;
     font-size: 18px;
     line-height: 23px;
   }
@@ -918,13 +931,13 @@ input[type="number"] {
 
   .skill__heading {
     margin-bottom: 15px;
-    min-width: 342px;
+    width: max-content;
   }
 
   .skill__heading_third {
-    min-width: 343px;
+    width: max-content;
   }
-  
+
   .skill__heading_third::before {
     bottom: 45px;
   }
@@ -949,7 +962,6 @@ input[type="number"] {
   }
 
   .service__image {
-    min-width: 350px;
     height: 225px;
   }
 
@@ -998,7 +1010,7 @@ input[type="number"] {
   }
 
   .contact__form__btn {
-    width: 353px;
+    width: 60%;
     font-size: 15px;
     line-height: 20px;
   }
@@ -1030,8 +1042,12 @@ input[type="number"] {
   }
 
   .footer__heading {
-    width: 80%;
+    /* width: max-content; */
   }
+
+  .footer__heading-first-line {
+    display: inline;
+}
 
   .footer__copyright {
     flex-direction: column;
@@ -1049,6 +1065,17 @@ input[type="number"] {
 
 @media (max-width: 455px) {
   .skill__heading_fourth::before {
+    bottom: 93px;
+  }
+  .footer__heading-first-line {
+    display: inline-flex;
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 326px) {
+  .skill__heading_third::before {
     bottom: 93px;
   }
 }

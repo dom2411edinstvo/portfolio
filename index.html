@@ -1,449 +1,346 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Сброс стилей по умолчанию -->
-    <link type="text/css" rel="stylesheet" href="./css/reset.css" />
-    <!-- Основной файл стилей -->
-    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Шрифты проекта -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Шрифт "IBM Plex Mono" -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Шрифт "Manrope" -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Фавикон иконка -->
-    <link rel="icon" href="./resources/favicon.png" type="image/jpeg" />
+  <!-- Сброс стилей по умолчанию -->
+  <link type="text/css" rel="stylesheet" href="./css/reset.css" />
+  <!-- Основной файл стилей -->
+  <link type="text/css" rel="stylesheet" href="./css/main.css" />
 
-    <title>Портфолио</title>
-  </head>
+  <!-- Шрифты проекта -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Шрифт "IBM Plex Mono" -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Шрифт "Manrope" -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet" />
+  <!-- Фавикон иконка -->
+  <link rel="icon" href="./resources/favicon.png" type="image/jpeg" />
 
-  <body>
-    <!-- Шапка сайта(первый экран сайта) -->
-    <header class="header">
-      <div class="container">
-        <div class="header-wrap">
-          <!-- Логотип -->
-          <div class="logo">
-            <a href="#" class="logo__link"
-              ><img src="./resources/logo.png" alt="Логотип" class="logo-image"
-            /></a>
+  <title>Портфолио</title>
+</head>
+
+<body>
+  <!-- Шапка сайта(первый экран сайта) -->
+  <header class="header">
+    <div class="container">
+      <div class="header-wrap">
+        <!-- Логотип -->
+        <a href="#" class="logo__link"><img src="./resources/logo.png" alt="Логотип" class="logo__image" /></a>
+
+        <!-- Панель навигации по сайту -->
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#projects">портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#skills">компетенции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#services">услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#contact">контакты</a>
+            </li>
+          </ul>
+
+          <!-- Кнопка открытия бургера -->
+          <button class="js-burger-btn burger-btn"></button>
+          <!-- бургер меню секции header -->
+          <div class="js-burger burger">
+            <div class="burger__content">
+              <a href="#" class="burger__logo__link">
+                <picture>
+                  <img src="./resources/logo.png" alt="Логотип" class="burger__logo__image" />
+                </picture>
+              </a>
+              <nav class="burger__nav">
+                <ul class="burger__menu">
+                  <li class="burger__menu-item">
+                    <a href="#projects">Портфолио</a>
+                  </li>
+                  <li class="burger__menu-item">
+                    <a href="#skills">Компетенции</a>
+                  </li>
+                  <li class="burger__menu-item">
+                    <a href="#services">Услуги</a>
+                  </li>
+                  <li class="burger__menu-item">
+                    <a href="#footer">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="js-burger__content burger__footer">
+                <adress>
+                  <div class="burger__footer__wrap">
+                    <p class="burger__heading">для связи</p>
+                    <ul class="burger__list">
+                      <li class="burger__mail">
+                        <a href="mailto:samadhi2411@ya.ru" target="_blank">mail</a>
+                      </li>
+                      <li class="burger__telegram">
+                        <a href="https://t.me/samadhi2411" target="_blank">telegram</a>
+                      </li>
+                      <li class="burger__whatsapp">
+                        <a href="https://wa.me/79177385650" target="_blank">whatsapp</a>
+                      </li>
+                    </ul>
+                  </div>
+                </adress>
+              </div>
+            </div>
           </div>
+        </nav>
+      </div>
+      <div class="introduce">
+        <p class="introduce__offer">
+          Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+          повышают престиж компании и позволяют выделиться на фоне конкурентов
+        </p>
+        <h1 class="introduce__heading">
+          Привет, я Артём — фронтенд разработчик и веб дизайнер
+        </h1>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <!-- Секция "Самые свежие проекты" -->
+    <section class="projects">
+      <div class="container">
+        <h2 class="projects__heading" id="projects">Самые свежие проекты</h2>
+        <ul class="projects__list">
+          <li class="project project__last">
+            <a href="https://dom2411edinstvo.github.io/metrika_studio" target="_blank" class="project__link">
+              <picture>
+                <source media="(max-width: 961px)" srcset="./resources/metrika_1199.jpeg" />
+                <source media="(max-width: 550ox)" srcset="./resources/metrika_767.jpeg" />
+                <img src="./resources/metrika_project.jpeg" alt="Картинка последнего проекта" class="project__image" />
+              </picture>
+              <div class="project__text">
+                <h3 class="project__heading">Метрика</h3>
+                <p class="project__desc">верстка, настройка</p>
+              </div>
+              <p class="project__mark">дизайн интерьера</p>
+            </a>
+          </li>
+          <li class="project project__second">
+            <a href="https://dom2411edinstvo.github.io/hello_mom" target="_blank" class="project__link">
+              <picture>
+                <source media="(max-width: 961px)" srcset="./resources/nothing_1199.jpeg" />
+                <source media="(max-width: 550px)" srcset="./resources/nothing_767.jpeg" />
+                <img src="./resources/nothing_project.jpeg" alt="Картинка второго проекта" class="project__image" />
+              </picture>
+              <div class="project__text">
+                <h3 class="project__heading">Nothing</h3>
+                <p class="project__desc">верстка, настройка</p>
+              </div>
+              <p class="project__mark">презентация продукта</p>
+            </a>
+          </li>
+          <li class="project project__first">
+            <a href="" class="project__link">
+              <picture>
+                <source media="(max-width: 961px)" srcset="./resources/toptrip_1199.jpeg" />
+                <source media="(max-width: 550px)" srcset="./resources/toptrip_767" />
+                <img src="./resources/toptrip_project.jpeg" alt="Картинка третьего проекта" class="project__image" />
+              </picture>
+              <div class="project__text">
+                <h3 class="project__heading project__heading_first">
+                  toptrip
+                </h3>
+                <p class="project__desc">верстка</p>
+              </div>
+              <p class="project__mark">заказ путешествий</p>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="btn projects__btn">Смотреть все проекты</a>
+      </div>
+    </section>
 
-          <!-- Панель навигации по сайту -->
-          <nav class="nav">
-            <ul class="menu">
-              <li class="menu__item">
-                <a class="menu__item__link" href="#projects">портфолио</a>
+    <!-- Секция "Мои компетенции" -->
+    <section class="skills">
+      <div class="container">
+        <h2 class="skills__heading" id="skills">Мои компетенции</h2>
+        <ul class="skills__list">
+          <li class="skill skill__first">
+            <h3 class="skill__heading skill__heading_first">HTML и CSS</h3>
+            <p class="skill__desc skill__desc_first">
+              это основа фронтенд разработки. Умение создавать и правильно
+              структурировать HTML-документы, а также применять стили к этим
+              документам на CSS, является обязательным навыком для каждого
+              фронтенд разработчика.
+            </p>
+          </li>
+          <li class="skill skill__second">
+            <h3 class="skill__heading skill__heading_second">JavaScript</h3>
+            <p class="skill__desc skill__desc_second">
+              это язык программирования, который используется для создания
+              динамического и интерактивного пользовательского интерфейса.
+              Хороший фронтенд разработчик должен быть знаком с основами
+              JavaScript, включая работу с DOM-деревом, асинхронными запросами
+              и манипуляцией данными на стороне клиента.
+            </p>
+          </li>
+          <li class="skill skill__third">
+            <h3 class="skill__heading skill__heading_third">
+              Работа с библиотеками и фреймворками
+            </h3>
+            <p class="skill__desc skill__desc_third">
+              фронтенд разработчики должны быть знакомы с различными
+              библиотеками и фреймворками, такими как React, Angular, Vue и
+              другими. Умение использовать готовые решения, адаптировать их
+              под нужды проекта и расширять их функциональность, является
+              очень важным навыком.
+            </p>
+          </li>
+          <li class="skill skill__fourth">
+            <h3 class="skill__heading skill__heading_fourth">
+              Разработка для мобильных устройств и адаптивная верстка
+            </h3>
+            <p class="skill__desc skill__desc_fourth">
+              фронтенд разработчики должны быть знакомы с различными
+              библиотеками и фреймворками, такими как React, Angular, Vue и
+              другими. Умение использовать готовые решения, адаптировать их
+              под нужды проекта и расширять их функциональность является очень
+              важным навыком.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Секция услуг -->
+    <section class="services">
+      <div class="container">
+        <h2 class="services__heading" id="services">
+          Помогаю реализовать широкий спектр задач
+        </h2>
+        <ul class="services__list">
+          <li class="service service__site-dev">
+            <picture>
+              <img src="./resources/website_development.jpeg" alt="Разработка сайтов" class="service__image" />
+            </picture>
+
+            <div class="service__text">
+              <h3 class="service__heading">Разработка сайта под ключ</h3>
+              <p class="service__desc">
+                Это создание дизайна веб-сайтов, созданный для удобства
+                пользователя и решения бизнес-задач.<br />
+                Сайты должны быть понятными и удобными, ведь чем понятнее
+                сайт, тем быстрее пользователь совершит целевое действие.
+              </p>
+            </div>
+          </li>
+          <li class="service service__site-layout">
+            <picture>
+              <img src="./resources/website_layout.jpg" alt="Верстка сайтов" class="service__image" />
+            </picture>
+            <div class="service__text">
+              <h3 class="service__heading">Верстка сайтов</h3>
+              <p class="service__desc">
+                Это процесс создания HTML-документов и применения к ним стилей
+                на CSS. Фронтенд разработчик может помочь создать
+                привлекательный и удобный интерфейс для вашего сайта.
+              </p>
+            </div>
+          </li>
+          <li class="service service__mob-dev">
+            <picture>
+              <img src="./resources/mobile_interface_development.jpg" alt="Разработка мобильного интерфейса"
+                class="service__image" />
+            </picture>
+            <div class="service__text">
+              <h3 class="service__heading">
+                Разработка мобильного интерфейса
+              </h3>
+              <p class="service__desc">
+                Это процесс создания интерактивных элементов на странице с
+                помощью JavaScript. Фронтенд разработчик может помочь создать
+                динамический и удобный пользовательский интерфейс для вашего
+                сайта или приложения.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Секция для связи со мной -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__wrap">
+          <form action="#" class="contact__form" id="contact__form">
+            <h2 class="contact__form__heading" id="contact">
+              Для связи со мной заполните простую форму
+            </h2>
+            <div class="contact__inputs-wrap">
+              <input onkeyup="this.value = this.value.replace(/\d/g,'')" type="text" name="name" required minlength="3"
+                maxlength="30" class="contact__form__input" id="#name" placeholder="Имя Фамилия" />
+              <input type="" inputmode="numeric" name="phone" required maxlength="12" class="contact__form__input"
+                id="#phone" placeholder="Номер телефона" />
+            </div>
+            <button action="#" type="submit" class="btn contact__form__btn">
+              Отправить
+            </button>
+          </form>
+          <div class="contact__photo">
+            <picture>
+              <img src="./resources/new_photo.jpg" alt="Программист с собакой" class="contact__photo__image" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <address>
+          <div class="footer__persona">
+            <h4 class="footer__heading">
+              <span class="footer__heading-first-line">Портфолио фронтенд-разработчика</span>
+              Артёма Никифорова
+            </h4>
+            <ul class="footer__persona__links">
+              <li class="footer__persona__link">
+                <a href="mailto:samadhi2411@ya.ru" target="_blank" class="mail">mail</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__item__link" href="#skills">компетенции</a>
+              <li class="footer__persona__link">
+                <a href="https://t.me/samadhi2411" target="_blank" class="telegram">telegram</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__item__link" href="#services">услуги</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item__link" href="#contact">контакты</a>
+              <li class="footer__persona__link">
+                <a href="https://wa.me/79177385650" target="_blank" class="whatsapp">whatsapp</a>
               </li>
             </ul>
+          </div>
+        </address>
 
-            <!-- Кнопка открытия бургера -->
-            <button class="js-burger-btn burger-btn"></button>
-            <!-- бургер меню секции header -->
-            <div class="js-burger burger">
-              <div class="burger__content">
-                <a href="#" class="burger__logo-link">
-                  <picture>
-                    <img
-                      src="./resources/logo.png"
-                      alt="Логотип"
-                      class="burger__logo"
-                    />
-                  </picture>
-                </a>
-                <nav class="burger__nav">
-                  <ul class="burger__menu">
-                    <li class="burger__menu-item">
-                      <a href="#projects">Портфолио</a>
-                    </li>
-                    <li class="burger__menu-item">
-                      <a href="#skills">Компетенции</a>
-                    </li>
-                    <li class="burger__menu-item">
-                      <a href="#services">Услуги</a>
-                    </li>
-                    <li class="burger__menu-item">
-                      <a href="#footer">Контакты</a>
-                    </li>
-                  </ul>
-                </nav>
-                <div class="js-burger__content burger__footer">
-                  <adress>
-                    <div class="burger__footer__wrap">
-                      <p class="burger__heading">для связи</p>
-                      <ul class="burger__list">
-                        <li class="burger__mail">
-                          <a href="mailto:samadhi2411@ya.ru" target="_blank"
-                            >mail</a
-                          >
-                        </li>
-                        <li class="burger__telegram">
-                          <a href="https://t.me/samadhi2411" target="_blank"
-                            >telegram</a
-                          >
-                        </li>
-                        <li class="burger__whatsapp">
-                          <a href="https://wa.me/79177385650" target="_blank"
-                            >whatsapp</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </adress>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <div class="introduce">
-          <p class="introduce__offer">
-            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
-            повышают престиж компании и позволяют выделиться на фоне конкурентов
-          </p>
-          <h1 class="introduce__heading">
-            Привет, я Артём — фронтенд разработчик и веб дизайнер
-          </h1>
+        <div class="footer__copyright">
+          <p class="footer__copyright__text">©️ Все права защищены. 2024</p>
+          <p class="footer__copyright__policy">Политика обработки данных</p>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <!-- Секция "Самые свежие проекты" -->
-      <section class="projects">
-        <div class="container">
-          <h2 class="projects__heading" id="projects">Самые свежие проекты</h2>
-          <ul class="projects__list">
-            <li class="project project__last">
-              <a
-                href="https://dom2411edinstvo.github.io/metrika_studio"
-                target="_blank"
-                class="project__link"
-              >
-                <picture>
-                  <source
-                    media="(max-width: 961px)"
-                    srcset="./resources/metrika_1199.jpeg"
-                  />
-                  <source
-                    media="(max-width: 550ox)"
-                    srcset="./resources/metrika_767.jpeg"
-                  />
-                  <img
-                    src="./resources/metrika_project.jpeg"
-                    alt="Картинка последнего проекта"
-                    class="project__image"
-                  />
-                </picture>
-                <div class="project__text">
-                  <h3 class="project__heading">Метрика</h3>
-                  <p class="project__desc">верстка, настройка</p>
-                </div>
-                <p class="project__mark">дизайн интерьера</p>
-              </a>
-            </li>
-            <li class="project project__second">
-              <a
-                href="https://dom2411edinstvo.github.io/hello_mom"
-                target="_blank"
-                class="project__link"
-              >
-                <picture>
-                  <source
-                    media="(max-width: 961px)"
-                    srcset="./resources/nothing_1199.jpeg"
-                  />
-                  <source
-                    media="(max-width: 550px)"
-                    srcset="./resources/nothing_767.jpeg"
-                  />
-                  <img
-                    src="./resources/nothing_project.jpeg"
-                    alt="Картинка второго проекта"
-                    class="project__image"
-                  />
-                </picture>
-                <div class="project__text">
-                  <h3 class="project__heading">Nothing</h3>
-                  <p class="project__desc">верстка, настройка</p>
-                </div>
-                <p class="project__mark">презентация продукта</p>
-              </a>
-            </li>
-            <li class="project project__first">
-              <a href="" class="project__link">
-                <picture>
-                  <source
-                    media="(max-width: 961px)"
-                    srcset="./resources/toptrip_1199.jpeg"
-                  />
-                  <source
-                    media="(max-width: 550px)"
-                    srcset="./resources/toptrip_767"
-                  />
-                  <img
-                    src="./resources/toptrip_project.jpeg"
-                    alt="Картинка третьего проекта"
-                    class="project__image"
-                  />
-                </picture>
-                <div class="project__text">
-                  <h3 class="project__heading project__heading_first">
-                    toptrip
-                  </h3>
-                  <p class="project__desc">верстка</p>
-                </div>
-                <p class="project__mark">заказ путешествий</p>
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="btn projects__btn">Смотреть все проекты</a>
-        </div>
-      </section>
+    </div>
+  </footer>
+  <!-- Подключение скрипта для инпута с вводом телефона -->
+  <script src="./js/input_phone.js"></script>
+  <!-- Подключение скрипта для бургер меню -->
+  <script src="./js/burger.js"></script>
+</body>
 
-      <!-- Секция "Мои компетенции" -->
-      <section class="skills">
-        <div class="container">
-          <h2 class="skills__heading" id="skills">Мои компетенции</h2>
-          <ul class="skills__list">
-            <li class="skill skill__first">
-              <h3 class="skill__heading skill__heading_first">HTML и CSS</h3>
-              <p class="skill__desc skill__desc_first">
-                это основа фронтенд разработки. Умение создавать и правильно
-                структурировать HTML-документы, а также применять стили к этим
-                документам на CSS, является обязательным навыком для каждого
-                фронтенд разработчика.
-              </p>
-            </li>
-            <li class="skill skill__second">
-              <h3 class="skill__heading skill__heading_second">JavaScript</h3>
-              <p class="skill__desc skill__desc_second">
-                это язык программирования, который используется для создания
-                динамического и интерактивного пользовательского интерфейса.
-                Хороший фронтенд разработчик должен быть знаком с основами
-                JavaScript, включая работу с DOM-деревом, асинхронными запросами
-                и манипуляцией данными на стороне клиента.
-              </p>
-            </li>
-            <li class="skill skill__third">
-              <h3 class="skill__heading skill__heading_third">
-                Работа с библиотеками и фреймворками
-              </h3>
-              <p class="skill__desc skill__desc_third">
-                фронтенд разработчики должны быть знакомы с различными
-                библиотеками и фреймворками, такими как React, Angular, Vue и
-                другими. Умение использовать готовые решения, адаптировать их
-                под нужды проекта и расширять их функциональность, является
-                очень важным навыком.
-              </p>
-            </li>
-            <li class="skill skill__fourth">
-              <h3 class="skill__heading skill__heading_fourth">
-                Разработка для мобильных устройств и адаптивная верстка
-              </h3>
-              <p class="skill__desc skill__desc_fourth">
-                фронтенд разработчики должны быть знакомы с различными
-                библиотеками и фреймворками, такими как React, Angular, Vue и
-                другими. Умение использовать готовые решения, адаптировать их
-                под нужды проекта и расширять их функциональность является очень
-                важным навыком.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Секция услуг -->
-      <section class="services">
-        <div class="container">
-          <h2 class="services__heading" id="services">
-            Помогаю реализовать широкий спектр задач
-          </h2>
-          <ul class="services__list">
-            <li class="service service__site-dev">
-              <picture>
-                <img
-                  src="./resources/website_development.jpeg"
-                  alt="Разработка сайтов"
-                  class="service__image"
-                />
-              </picture>
-
-              <div class="service__text">
-                <h3 class="service__heading">Разработка сайта под ключ</h3>
-                <p class="service__desc">
-                  Это создание дизайна веб-сайтов, созданный для удобства
-                  пользователя и решения бизнес-задач.<br />
-                  Сайты должны быть понятными и удобными, ведь чем понятнее
-                  сайт, тем быстрее пользователь совершит целевое действие.
-                </p>
-              </div>
-            </li>
-            <li class="service service__site-layout">
-              <picture>
-                <img
-                  src="./resources/website_layout.jpg"
-                  alt="Верстка сайтов"
-                  class="service__image"
-                />
-              </picture>
-              <div class="service__text">
-                <h3 class="service__heading">Верстка сайтов</h3>
-                <p class="service__desc">
-                  Это процесс создания HTML-документов и применения к ним стилей
-                  на CSS. Фронтенд разработчик может помочь создать
-                  привлекательный и удобный интерфейс для вашего сайта.
-                </p>
-              </div>
-            </li>
-            <li class="service service__mob-dev">
-              <picture>
-                <img
-                  src="./resources/mobile_interface_development.jpg"
-                  alt="Разработка мобильного интерфейса"
-                  class="service__image"
-                />
-              </picture>
-              <div class="service__text">
-                <h3 class="service__heading">
-                  Разработка мобильного интерфейса
-                </h3>
-                <p class="service__desc">
-                  Это процесс создания интерактивных элементов на странице с
-                  помощью JavaScript. Фронтенд разработчик может помочь создать
-                  динамический и удобный пользовательский интерфейс для вашего
-                  сайта или приложения.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Секция для связи со мной -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="contact__wrap">
-            <form action="#" class="contact__form" id="contact__form">
-              <h2 class="contact__form__heading" id="contact">
-                Для связи со мной заполните простую форму
-              </h2>
-              <div class="contact__inputs-wrap">
-                <input
-                  onkeyup="this.value = this.value.replace(/\d/g,'')"
-                  type="text"
-                  name="name"
-                  required
-                  minlength="3"
-                  maxlength="30"
-                  class="contact__form__input"
-                  id="#name"
-                  placeholder="Имя Фамилия"
-                />
-                <input
-                  type=""
-                  inputmode="numeric"
-                  name="phone"
-                  required
-                  maxlength="12"
-                  class="contact__form__input"
-                  id="#phone"
-                  placeholder="Номер телефона"
-                />
-              </div>
-              <button action="#" type="submit" class="btn contact__form__btn">
-                Отправить
-              </button>
-            </form>
-            <div class="contact__photo">
-              <picture>
-                <img
-                  src="./resources/new_photo.jpg"
-                  alt="Программист с собакой"
-                  class="contact__photo__image"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Подвал сайта -->
-    <footer class="footer" id="footer">
-      <div class="container">
-        <div class="footer__wrap">
-          <address>
-            <div class="footer__persona">
-              <h4 class="footer__heading">
-                Портфолио фронтенд-разработчика Артёма Никифорова
-              </h4>
-              <ul class="footer__persona__links">
-                <li class="footer__persona__link">
-                  <a
-                    href="mailto:samadhi2411@ya.ru"
-                    target="_blank"
-                    class="mail"
-                    >mail</a
-                  >
-                </li>
-                <li class="footer__persona__link">
-                  <a
-                    href="https://t.me/samadhi2411"
-                    target="_blank"
-                    class="telegram"
-                    >telegram</a
-                  >
-                </li>
-                <li class="footer__persona__link">
-                  <a
-                    href="https://wa.me/79177385650"
-                    target="_blank"
-                    class="whatsapp"
-                    >whatsapp</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </address>
-
-          <div class="footer__copyright">
-            <p class="footer__copyright__text">©️ Все права защищены. 2024</p>
-            <p class="footer__copyright__policy">Политика обработки данных</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Подключение скрипта для инпута с вводом телефона -->
-    <script src="./js/input_phone.js"></script>
-    <!-- Подключение скрипта для бургер меню -->
-    <script src="./js/burger.js"></script>
-  </body>
 </html>
