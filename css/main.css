@@ -93,11 +93,10 @@ body {
   margin-bottom: 80px;
 }
 
-.project {
-  position: relative;
-}
-
 .project__link {
+  position: relative;
+  width: 100%;
+  height: 550px;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -113,7 +112,7 @@ body {
 
 .project__image {
   width: 100%;
-  max-height: 550px;
+  height: 100%;
   object-fit: cover;
   border-radius: 30px;
   background: linear-gradient(
@@ -145,7 +144,7 @@ body {
 
 .project__mark {
   position: absolute;
-  top: 50px;
+  bottom: 2200%;
   left: 45px;
   padding: 10px 20px;
   border-radius: 100px;
@@ -294,8 +293,6 @@ body {
 .service__text {
   display: flex;
   justify-content: space-between;
-  height: 283px;
-  padding: 40px 0px 0px 40px;
   background: rgb(25, 28, 25);
   border-radius: 30px;
 }
@@ -562,6 +559,12 @@ input[type="number"] {
   color: rgb(255, 255, 255);
 }
 
+@media (max-width: 1125px) {
+  .project__mark {
+    bottom: 1900%;
+  }
+}
+
 @media (max-width: 961px) {
   .container {
     max-width: 961px;
@@ -628,12 +631,16 @@ input[type="number"] {
     margin-bottom: 64px;
   }
 
+  .project__link {
+    height: 445px;
+  }
+
   .project__image {
     border-radius: 24px;
   }
 
   .project__mark {
-    top: 40px;
+    bottom: 1800%;
     left: 35px;
     border-radius: 81px;
     font-size: 16px;
@@ -740,8 +747,6 @@ input[type="number"] {
   }
 
   .service__text {
-    height: 229px;
-    padding: 32px 0px 0px 32px;
     border-radius: 24px;
   }
 
@@ -819,16 +824,37 @@ input[type="number"] {
   }
 }
 
+@media (max-width: 900px) {
+  .project__mark {
+    bottom: 1650%;
+}
+
 @media (max-width: 887px) {
   .skill__heading_fourth::before {
     bottom: 100px;
   }
 }
 
+@media (max-width: 800px) {
+  .project__mark {
+    bottom: 1450%;
+}
+}
+
+@media (max-width: 720px) {
+  .project__mark {
+    bottom: 1250%;
+}
+}
+
+
 @media (max-width: 628px) {
   .skill__heading_third::before {
     bottom: 99px;
   }
+  .project__mark {
+    bottom: 1050%;
+}
 }
 
 @media (max-width: 599px) {
@@ -880,10 +906,6 @@ input[type="number"] {
     line-height: 39px;
   }
 
-  .project__image {
-    height: 445px;
-  }
-
   .project__text {
     left: 35px;
     bottom: 50px;
@@ -895,7 +917,7 @@ input[type="number"] {
   }
 
   .project__mark {
-    top: 30px;
+    bottom: 1000%;
     left: 33px;
     font-size: 13px;
     line-height: 18px;
@@ -970,8 +992,6 @@ input[type="number"] {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    padding: 30px 22px 65px 22px;
     font-size: 18px;
     line-height: 23px;
   }
@@ -1063,6 +1083,12 @@ input[type="number"] {
   }
 }
 
+@media (max-width: 515px) {
+  .project__mark {
+    bottom: 800%;
+}
+}
+
 @media (max-width: 455px) {
   .skill__heading_fourth::before {
     bottom: 93px;
@@ -1071,7 +1097,18 @@ input[type="number"] {
     display: inline-flex;
     width: 100%;
   }
-  
+}
+
+@media (max-width: 430px) {
+  .project__mark {
+    bottom: 600%;
+}
+}
+
+@media (max-width: 345px) {
+  .project__mark {
+    bottom: 540%;
+}
 }
 
 @media (max-width: 326px) {
