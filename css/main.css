@@ -420,7 +420,7 @@ input[type="number"] {
 
 .footer__heading-first-line {
   display: inline-flex;
-  width: 100%;
+  width: fit-content;
 }
 
 .footer__persona__links {
@@ -864,6 +864,10 @@ input[type="number"] {
   .project__mark {
     bottom: 1250%;
 }
+
+ .footer__heading-first-line {
+  width: 100%;
+ }
 }
 
 
@@ -1086,14 +1090,10 @@ input[type="number"] {
     font-size: 15px;
     line-height: 20px;
   }
-
-  .footer__heading {
-    /* width: max-content; */
-  }
-
+  
   .footer__heading-first-line {
-    display: inline;
-}
+    width: fit-content;
+  }
 
   .footer__copyright {
     flex-direction: column;
@@ -1119,8 +1119,10 @@ input[type="number"] {
   .skill__heading_fourth::before {
     bottom: 93px;
   }
+}
+
+@media (max-width: 440px) {
   .footer__heading-first-line {
-    display: inline-flex;
     width: 100%;
   }
 }
