@@ -145,7 +145,7 @@ body {
 
 .project__mark {
   position: absolute;
-  bottom: 2200%;
+  bottom: 88%;
   left: 45px;
   padding: 10px 20px;
   border-radius: 100px;
@@ -562,11 +562,11 @@ input[type="number"] {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 1125px) {
+/* @media (max-width: 1125px) {
   .project__mark {
     bottom: 1900%;
   }
-}
+} */
 
 @media (max-width: 961px) {
   .container {
@@ -642,7 +642,7 @@ input[type="number"] {
   }
 
   .project__mark {
-    bottom: 1800%;
+    bottom: 78%;
     left: 35px;
     border-radius: 81px;
     font-size: 16px;
@@ -828,11 +828,11 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .project__mark {
     bottom: 1650%;
 }
-}
+} */
 
 @media (max-width: 887px) {
   .skill__heading_fourth::before {
@@ -840,11 +840,11 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .project__mark {
     bottom: 1450%;
 }
-}
+} */
 
 @media (max-width: 765px) {
   .service__heading {
@@ -860,24 +860,24 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .project__mark {
     bottom: 1250%;
-}
+} */
 
  .footer__heading-first-line {
   width: 100%;
  }
-}
+
 
 
 @media (max-width: 628px) {
   .skill__heading_third::before {
     bottom: 99px;
   }
-  .project__mark {
+  /* .project__mark {
     bottom: 1050%;
-}
+} */
 }
 
 @media (max-width: 599px) {
@@ -940,7 +940,7 @@ input[type="number"] {
   }
 
   .project__mark {
-    bottom: 1000%;
+    bottom: 74%;
     left: 33px;
     font-size: 13px;
     line-height: 18px;
@@ -1110,9 +1110,9 @@ input[type="number"] {
 }
 
 @media (max-width: 515px) {
-  .project__mark {
+  /* .project__mark {
     bottom: 800%;
-}
+} */
 }
 
 @media (max-width: 455px) {
@@ -1127,17 +1127,17 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
   .project__mark {
     bottom: 600%;
 }
-}
+} */
 
-@media (max-width: 345px) {
+/* @media (max-width: 345px) {
   .project__mark {
     bottom: 540%;
 }
-}
+} */
 
 @media (max-width: 326px) {
   .skill__heading_third::before {
