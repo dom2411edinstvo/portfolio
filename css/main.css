@@ -155,6 +155,7 @@ body {
 }
 
 .btn {
+  border: none;
   border-radius: 10px;
   background-color: rgb(27, 255, 7);
   color: rgb(0, 0, 0);
@@ -655,7 +656,6 @@ input[type="number"] {
 
   .btn {
     border-radius: 8px;
-    border: none;
   }
 
   .projects__btn {
